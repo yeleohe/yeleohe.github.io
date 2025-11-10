@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ye He (何晔) </title>
-    <meta name="description" content="Ye He GitHub Pages site.">
     <meta charset="UTF-8">
+    <title>Ye He (何晔)</title>
+    <meta name="description" content="Personal website of Ye He (何晔).">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ye He (何晔) </title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Ye He (何晔)</h1>
-            <nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#home">Ye He <span class="logo-secondary">(何晔)</span></a>
+            </div>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#publications">Publications</a></li>
@@ -23,83 +24,298 @@
         </div>
     </header>
 
-    <section id="home" class="home">
-        <div class="container">
-            <img src="your-photo.jpeg" alt="Your Photo" class="profile-photo">
-            <div class="intro">
-                <h2>Welcome to my personal website!</h2>
-                <p>I am a Hale Visiting Assistant Professor in the <a href="https://math.gatech.edu/" target="_blank">School of Mathematics</a>, Georgia Institute of Technology, hosted by <a href="https://mtao8.math.gatech.edu/" target="_blank">Prof. Molei Tao</a>. Before joining Georgia Institute of Technology, I received my PhD. degree in Mathematics from University of California, Davis advised by <a href="https://sites.google.com/view/kriznakumar/home" target="_blank">Prof. Krishna Balasubramanian</a>. My research focuses on the mathematical foundations of artificial intelligence, machine learning and data science, with an emphasis on developing scalable inference methods, including sampling, diffusion models and stochastic optimization.</p>
-                <p>Starting Fall 2026, I will be joining the Department of Applied Mathematics at the University of Colorado Boulder as a tenure-track Assistant Professor.</p>
-                <a href="cv.pdf" class="btn">Download CV</a>
+    <main>
+        <!-- Hero / Home -->
+        <section id="home" class="section hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1 class="hero-title">Ye He <span class="hero-secondary">(何晔)</span></h1>
+                    <p class="hero-tagline">
+                        Applied mathematics for modern AI, sampling, and diffusion models.
+                    </p>
+                    <p class="hero-body">
+                        I am a Hale Visiting Assistant Professor in the 
+                        <a href="https://math.gatech.edu/" target="_blank" rel="noopener">School of Mathematics</a> 
+                        at the Georgia Institute of Technology, hosted by 
+                        <a href="https://mtao8.math.gatech.edu/" target="_blank" rel="noopener">Prof. Molei Tao</a>. 
+                        Before joining Georgia Tech, I received my Ph.D. in Mathematics from the 
+                        University of California, Davis, advised by 
+                        <a href="https://sites.google.com/view/kriznakumar/home" target="_blank" rel="noopener">
+                            Prof. Krishna Balasubramanian
+                        </a>.
+                    </p>
+                    <p class="hero-body">
+                        My research focuses on the mathematical foundations of artificial intelligence, 
+                        machine learning, and data science, with an emphasis on scalable inference methods, 
+                        including sampling, diffusion models, and stochastic optimization.
+                    </p>
+                    <p class="hero-highlight">
+                        Starting Fall 2026, I will be joining the 
+                        Department of Applied Mathematics at the University of Colorado Boulder 
+                        as a tenure-track Assistant Professor.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="cv.pdf" class="btn primary">Download CV</a>
+                        <a href="#publications" class="btn subtle">View publications</a>
+                    </div>
+                </div>
+                <div class="hero-photo-wrapper">
+                    <img src="your-photo.jpeg" alt="Portrait of Ye He" class="profile-photo">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    Kevin Rojas, <strong>Ye He,</strong> Chieh-Hsin Lai, Yuta Takida, Yuki Mitsufuji, and Molei Tao (2025). Theory-Informed Improvements to Classifier-Free Guidance for Discrete Diffusion Models. <em>Preprint.</em> <a href="https://arxiv.org/abs/2507.08965" target="_blank">Link</a>
-                </li>  
-                <li>
-                    <strong>Ye He,</strong> Kevin Rojas, and Molei Tao (2025). What Exactly Does Guidance Do in Masked Discrete Diffusion Models. <em>Preprint.</em> <a href="https://arxiv.org/abs/2506.10971" target="_blank">Link</a>
-                </li>  
-                <li>
-                    Yuqing Wang, <strong>Ye He,</strong> and Molei Tao (2024). Evaluating the Design Space of Diffusion-based Generative Models. <em>NeurIPS 2024.</em> <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/227404a13d20898dec2018ebe368b202-Abstract-Conference.html" target="_blank">Link</a>
-                </li>
-                <li>
-                    <strong>Ye He,</strong> Alireza Mousavi-Hosseini, Krishnakumar Balasubramanian, and Murat A. Erdogdu (2024). A separation in Heavy-tailed Sampling: Gaussian vs. Stable Oracles for Proximal Samplers. <em>NeurIPS 2024.</em> <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/77f33e8bd80345de4aea8554bbe5a4da-Abstract-Conference.html" target="_blank">Link</a>
-                </li>
-                <li>
-                    <strong>Ye He,</strong> Kevin Rojas, and Molei Tao (2024). Zeroth-Order Sampling Methods for Non-Log-Concave Distributions: Alleviating Metastability by Denoting Diffusion. <em>NeurIPS 2024.</em> <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/8337b176767d948275d0b6d17cf4221e-Abstract-Conference.html" target="_blank">Link</a>
-                </li>
-                <li>
-                    Krishnakumar Balasubramanian, and Promit Ghosal, and <strong>Ye He,</strong> (2024. Authors listed alphabetically). High-dimensional Scaling Limits and Fluctuations of Online Least-Squares SGD with smooth Covariance. <em>Annals of Applied Probability.</em> <a href="https://projecteuclid.org/journals/annals-of-applied-probability/volume-35/issue-5/High-dimensional-scaling-limits-and-fluctuations-of-online-least-squares/10.1214/24-AAP2123.short" target="_blank">Link</a>
-                </li>
-                <li>
-                    Alireza Mousavi-Hosseini, Tyler K. Farghly, <strong>Ye He,</strong> Krishnakumar Balasubramanian, and Murat A. Erdogdu (2023). Towards a Complete Analysis of Langevin Monte Carlo: Beyond Poincare inequality. <em>COLT 2023.</em> <a href="https://proceedings.mlr.press/v195/mousavi-hosseini23a/mousavi-hosseini23a.pdf" target="_blank">Link</a>
-                </li>
-                <li>
-                    <strong>Ye He,</strong> Krishnakumar Balasubramanian, and Murat A. Erdogdu (2022). An analysis of Transformed Unadjusted Langevin Algorithm for Heavy-tailed Sampling. <em>IEEE transactions on Information Theory.</em> <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10258391" target="_blank">Link</a>
-                </li>
-               <li>
-                    <strong>Ye He,</strong> Krishnakumar Balasubramanian, Bharath K. Sriperumbudur, and Jianfeng Lu (2022). Regularized Stein Variational Gradient Flow. <em>Foundations of Computational Mathematics.</em> <a href="https://link.springer.com/article/10.1007/s10208-024-09663-w" target="_blank">Link</a>
-                </li>
-               <li>
-                    <strong>Ye He,</strong> Tyler K. Farghly, Krishnakumar Balasubramanian, and Murat A. Erdogdu (2022). Mean-Square Analysis of Discretized Ito Diffusions for Heavy-Tailed Sampling. <em>Journal of Machine Learning Research.</em> <a href="https://www.jmlr.org/papers/v25/22-1198.html" target="_blank">Link</a>
-                </li>
-                <li>
-                    <strong>Ye He,</strong> Krishnakumar Balasubramanian, and Murat A. Erdogdu (2020). On the Ergodicity, Bias and Asymptotic Normality of Randomized Midpoint Sampling Method. <em>NeurIPS 2020</em> <a href="https://proceedings.neurips.cc/paper/2020/hash/5265d33c184af566aeb7ef8afd0b9b03-Abstract.html" target="_blank">Link</a>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <!-- Publications -->
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Publications</h2>
+                    <p class="section-subtitle">
+                        Selected papers in probability, sampling, and diffusion-based generative models.
+                    </p>
+                </div>
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            Theory-Informed Improvements to Classifier-Free Guidance for Discrete Diffusion Models
+                        </div>
+                        <div class="pub-authors">
+                            Kevin Rojas, <strong>Ye He</strong>, Chieh-Hsin Lai, Yuta Takida, 
+                            Yuki Mitsufuji, and Molei Tao (2025).
+                        </div>
+                        <div class="pub-venue">
+                            <em>Preprint.</em>
+                            <a href="https://arxiv.org/abs/2507.08965" target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
 
-    <section id="teaching" class="teaching">
-        <div class="container">
-            <h2>Teaching</h2>
-            <h3>Courses Taught</h3>
-            <p> Summer 2019: <a href="https://catalog.ucdavis.edu/courses-subject-code/mat/"> MAT016C, Short Calculus</a></p>
-            <p> Fall 2023: <a href="https://catalog.gatech.edu/courses-undergrad/math/"> MATH1553, Introduction to Linear Algebra</a></p> 
-            <p> Spring 2024: <a href="https://catalog.gatech.edu/courses-undergrad/math/"> MATH2552, Differential Equations</a></p>
-        </div>
-    </section>
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            What Exactly Does Guidance Do in Masked Discrete Diffusion Models
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Kevin Rojas, and Molei Tao (2025).
+                        </div>
+                        <div class="pub-venue">
+                            <em>Preprint.</em>
+                            <a href="https://arxiv.org/abs/2506.10971" target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:yhe367@gatech.edu">yhe367@gatech.edu</a></p>
-            <p>Office: <a href="https://avservices.gatech.edu/building/002/">Skiles</a> 016</p>
-            <p>Social: 
-                <a href="https://scholar.google.com/citations?user=PC25rDIAAAAJ&hl=en&oi=sra">Google Scholar</a>
-            </p>
-        </div>
-    </section>
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            Evaluating the Design Space of Diffusion-based Generative Models
+                        </div>
+                        <div class="pub-authors">
+                            Yuqing Wang, <strong>Ye He</strong>, and Molei Tao (2024).
+                        </div>
+                        <div class="pub-venue">
+                            <em>NeurIPS 2024.</em>
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/227404a13d20898dec2018ebe368b202-Abstract-Conference.html"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Dr. Ye He. All rights reserved.</p>
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            A separation in Heavy-tailed Sampling: Gaussian vs. Stable Oracles for Proximal Samplers
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Alireza Mousavi-Hosseini, 
+                            Krishnakumar Balasubramanian, and Murat A. Erdogdu (2024).
+                        </div>
+                        <div class="pub-venue">
+                            <em>NeurIPS 2024.</em>
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/77f33e8bd80345de4aea8554bbe5a4da-Abstract-Conference.html"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            Zeroth-Order Sampling Methods for Non-Log-Concave Distributions: 
+                            Alleviating Metastability by Denoting Diffusion
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Kevin Rojas, and Molei Tao (2024).
+                        </div>
+                        <div class="pub-venue">
+                            <em>NeurIPS 2024.</em>
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/8337b176767d948275d0b6d17cf4221e-Abstract-Conference.html"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            High-dimensional Scaling Limits and Fluctuations of Online Least-Squares SGD with Smooth Covariance
+                        </div>
+                        <div class="pub-authors">
+                            Krishnakumar Balasubramanian, Promit Ghosal, and <strong>Ye He</strong> 
+                            (2024, authors listed alphabetically).
+                        </div>
+                        <div class="pub-venue">
+                            <em>Annals of Applied Probability.</em>
+                            <a href="https://projecteuclid.org/journals/annals-of-applied-probability/volume-35/issue-5/High-dimensional-scaling-limits-and-fluctuations-of-online-least-squares/10.1214/24-AAP2123.short"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            Towards a Complete Analysis of Langevin Monte Carlo: Beyond Poincaré Inequality
+                        </div>
+                        <div class="pub-authors">
+                            Alireza Mousavi-Hosseini, Tyler K. Farghly, <strong>Ye He</strong>, 
+                            Krishnakumar Balasubramanian, and Murat A. Erdogdu (2023).
+                        </div>
+                        <div class="pub-venue">
+                            <em>COLT 2023.</em>
+                            <a href="https://proceedings.mlr.press/v195/mousavi-hosseini23a/mousavi-hosseini23a.pdf"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            An Analysis of Transformed Unadjusted Langevin Algorithm for Heavy-tailed Sampling
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Krishnakumar Balasubramanian, 
+                            and Murat A. Erdogdu (2022).
+                        </div>
+                        <div class="pub-venue">
+                            <em>IEEE Transactions on Information Theory.</em>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10258391"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            Regularized Stein Variational Gradient Flow
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Krishnakumar Balasubramanian, 
+                            Bharath K. Sriperumbudur, and Jianfeng Lu (2022).
+                        </div>
+                        <div class="pub-venue">
+                            <em>Foundations of Computational Mathematics.</em>
+                            <a href="https://link.springer.com/article/10.1007/s10208-024-09663-w"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            Mean-Square Analysis of Discretized Itô Diffusions for Heavy-Tailed Sampling
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Krishnakumar Balasubramanian, 
+                            and Murat A. Erdogdu (2022).
+                        </div>
+                        <div class="pub-venue">
+                            <em>Journal of Machine Learning Research.</em>
+                            <a href="https://www.jmlr.org/papers/v25/22-1198.html"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item">
+                        <div class="pub-title">
+                            On the Ergodicity, Bias and Asymptotic Normality of Randomized Midpoint Sampling Method
+                        </div>
+                        <div class="pub-authors">
+                            <strong>Ye He</strong>, Krishnakumar Balasubramanian, 
+                            and Murat A. Erdogdu (2020).
+                        </div>
+                        <div class="pub-venue">
+                            <em>NeurIPS 2020.</em>
+                            <a href="https://proceedings.neurips.cc/paper/2020/hash/5265d33c184af566aeb7ef8afd0b9b03-Abstract.html"
+                               target="_blank" rel="noopener">Link</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Teaching -->
+        <section id="teaching" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Teaching</h2>
+                    <p class="section-subtitle">
+                        Courses I have taught and assisted.
+                    </p>
+                </div>
+                <div class="teaching-list">
+                    <div class="teaching-item">
+                        <div class="teaching-term">Summer 2019</div>
+                        <div class="teaching-course">
+                            <a href="https://catalog.ucdavis.edu/courses-subject-code/mat/" target="_blank" rel="noopener">
+                                MAT016C — Short Calculus
+                            </a>, UC Davis
+                        </div>
+                    </div>
+                    <div class="teaching-item">
+                        <div class="teaching-term">Fall 2023</div>
+                        <div class="teaching-course">
+                            <a href="https://catalog.gatech.edu/courses-undergrad/math/" target="_blank" rel="noopener">
+                                MATH1553 — Introduction to Linear Algebra
+                            </a>, Georgia Tech
+                        </div>
+                    </div>
+                    <div class="teaching-item">
+                        <div class="teaching-term">Spring 2024</div>
+                        <div class="teaching-course">
+                            <a href="https://catalog.gatech.edu/courses-undergrad/math/" target="_blank" rel="noopener">
+                                MATH2552 — Differential Equations
+                            </a>, Georgia Tech
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                    <p class="section-subtitle">
+                        The best way to reach me is by email.
+                    </p>
+                </div>
+                <div class="contact-grid">
+                    <div>
+                        <h3 class="contact-label">Email</h3>
+                        <p><a href="mailto:yhe367@gatech.edu">yhe367@gatech.edu</a></p>
+                    </div>
+                    <div>
+                        <h3 class="contact-label">Office</h3>
+                        <p>
+                            <a href="https://avservices.gatech.edu/building/002/" target="_blank" rel="noopener">
+                                Skiles 016
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="contact-label">Profiles</h3>
+                        <p>
+                            <a href="https://scholar.google.com/citations?user=PC25rDIAAAAJ&hl=en&oi=sra"
+                               target="_blank" rel="noopener">
+                                Google Scholar
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2024 Ye He. All rights reserved.</p>
         </div>
     </footer>
 </body>
